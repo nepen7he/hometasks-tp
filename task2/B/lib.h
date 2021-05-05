@@ -1,0 +1,1 @@
+int gettingMult (int a, int b);
