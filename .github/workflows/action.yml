@@ -25,10 +25,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build
         run: |
+          cd task5
           mkdir 3rdparty
+          git clone https://github.com/google/googletest.git 3rdparty
           sudo apt-get install libgtest-dev
           cp -r /usr/src/gtest/* ./3rdparty
-          cd task5
           mkdir build
           cd build
           cmake ..
